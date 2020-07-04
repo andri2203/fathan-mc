@@ -48,6 +48,7 @@ main.wrapper header a:hover {
 }
 
 form > .login-group {
+  text-align: left;
   margin-bottom: 20px;
   position: relative;
 }
@@ -82,12 +83,12 @@ form > .login-group {
   border-bottom: 2px solid white;
 }
 
-.login-group .login-input:focus ~ .placeholder,
-.login-group .login-input:valid ~ .placeholder {
-  left: 9px;
-  top: -16px;
-  font-size: 12px;
-  color: white;
+.login-group.has-success .login-input {
+  border-bottom: 1px solid rgba(54, 255, 54);
+}
+
+.login-group.has-success .placeholder {
+  color: rgba(54, 255, 54);
 }
 
 .login-group.has-error .login-input {
@@ -98,20 +99,25 @@ form > .login-group {
   color: rgb(255, 54, 54);
 }
 
+.login-group.has-error .error {
+  color: rgb(255, 54, 54);
+  font-size: 12px;
+}
+
+.login-group .login-input:focus ~ .placeholder,
+.login-group .login-input:valid ~ .placeholder {
+  left: 9px;
+  top: -16px;
+  font-size: 12px;
+  color: white;
+}
+
 .login-group.has-error .login-input:focus ~ .placeholder,
 .login-group.has-error .login-input:valid ~ .placeholder {
   left: 9px;
   top: -16px;
   font-size: 12px;
   color: rgb(255, 54, 54);
-}
-
-.login-group.has-success .login-input {
-  border-bottom: 1px solid rgba(54, 255, 54);
-}
-
-.login-group.has-success .placeholder {
-  color: rgba(54, 255, 54);
 }
 
 .login-group.has-success .login-input:focus ~ .placeholder,
