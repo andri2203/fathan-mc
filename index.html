@@ -4,6 +4,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fathan MC</title>
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="/dist/bootstrap/css/bootstrap.min.css" />
+    <!-- Bootstrap Datepicker -->
+    <link
+      rel="stylesheet"
+      href="/dist/bootstrap/css/bootstrap-datepicker.css"
+    />
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="/dist/fontawesome-free/css/all.min.css" />
+    <!--  -->
+    <link rel="stylesheet" href="/src/css/style.css" />
   </head>
-  <body></body>
+
+  <body data-spy="scroll" data-target=".fixed-top">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <span class="text-uppercase font-weight-bold">
+            Fathan's <span class="text-danger">MC</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item font-weight-bold">
+              <a class="nav-link page-scroll" href="#header">Beranda</a>
+            </li>
+            <li class="nav-item font-weight-bolder">
+              <a class="nav-link page-scroll" href="#tentang">Tentang</a>
+            </li>
+            <li class="nav-item font-weight-bold">
+              <a class="nav-link page-scroll" href="#mc">Pembawa Acara</a>
+            </li>
+            <li class="nav-item font-weight-bold">
+              <a class="nav-link page-scroll" href="#berita">Berita</a>
+            </li>
+            <li class="nav-item font-weight-bold">
+              <a class="nav-link page-scroll" href="#kontak">Kontak</a>
+            </li>
+            <li class="nav-item font-weight-bold signin">
+              <a class="nav-link" href="#">
+                Masuk
+              </a>
+            </li>
+            <li class="nav-item font-weight-bold signup">
+              <a class="nav-link" href="#">
+                Daftar
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link"
+                ><i class="fab fa-whatsapp fa-fw"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link"
+                ><i class="fab fa-instagram fa-fw"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <header id="header" class="display">
+      <img src="/src/images/background.jpg" alt="" srcset="" />
+      <div class="ex-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-form-search">
+              <h2 class="font-weight-bolder text-white mb-3">
+                Cari MC yang Tersedia:
+              </h2>
+              <form action="" role="form">
+                <div class="form-box">
+                  <select name="jenis_acara" id="jenis_acara" class="control">
+                    <option value="">Jenis Acara Kamu...</option>
+                  </select>
+                </div>
+                <div class="form-box">
+                  <select name="lokasi_acara" id="lokasi_acara" class="control">
+                    <option value="">Lokasi Acara Kamu...</option>
+                  </select>
+                </div>
+                <div class="form-box">
+                  <input
+                    type="text"
+                    name="tanggal_acara"
+                    id="tanggal_acara"
+                    class="control"
+                    placeholder="Tanggal Acara Kamu..."
+                  />
+                </div>
+                <button type="submit" class="btn btn-danger w-100">
+                  <i class="fa fa-search fa-fh mr-2"></i>Cari
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content -->
+    <section id="tentang" class="display content white">
+      <div class="container">
+        <h3 class="text-center">Tentang</h3>
+      </div>
+    </section>
+
+    <section id="mc" class="display content black">
+      <div class="container">
+        <h3 class="text-center">Pembawa Acara</h3>
+      </div>
+    </section>
+
+    <section id="berita" class="display content white">
+      <div class="container">
+        <h3 class="text-center">Berita</h3>
+      </div>
+    </section>
+
+    <section id="kontak" class="display content black">
+      <div class="container">
+        <h3 class="text-center">Hubungi Kami</h3>
+      </div>
+    </section>
+    <!-- Main Content -->
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-2 px-3">
+      <div class="container">
+        &copy; All Right Reserved
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Script -->
+    <script src="/dist/jquery/jquery.min.js"></script>
+    <script src="/dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/dist/jquery/jquery.easing.min.js"></script>
+    <script src="/dist/bootstrap/js/bootstrap-datepicker.min.js"></script>
+    <script src="/src/js/main.js"></script>
+  </body>
 </html>
